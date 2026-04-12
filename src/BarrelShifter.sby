@@ -1,0 +1,15 @@
+[options]
+mode prove
+depth 1
+
+[engines]
+smtbmc yices
+
+[script]
+read -formal BarrelShifter.sv
+read -formal BarrelShifter_formal.sv
+prep -top BarrelShifter_formal
+
+[files]
+BarrelShifter.sv
+BarrelShifter_formal.sv
