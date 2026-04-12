@@ -44,5 +44,6 @@ Empty Shift: If shamt == 0, does the shifter do nothing?
 Sign extension functionality: Does the arithmetic right mode exhibit correct sign extension behavior?
 
 ## Potential improvements
-1. It is probably a good idea to move the case statement inside the for loop. Current implementation creates multiple shift networks. The change would make the design take up significantly less area.
+1. *ADDED* It is probably a good idea to move the case statement inside the for loop. Current implementation creates multiple shift networks. The change would make the design take up significantly less area.
+       Upon adding, this reduced die area by about 20% using the sky130 libraries and yosys
 
