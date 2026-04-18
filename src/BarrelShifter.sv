@@ -13,7 +13,7 @@ module BarrelShifter #(
 
 	logic [DATA_W-1:0] stage [SHAMT_W:0];
 
-	always @(*) begin
+	always_comb begin
 		stage[0] = data_in;
 		for (int i = 0; i < SHAMT_W; i++) begin
 			if (shamt[i]) begin
