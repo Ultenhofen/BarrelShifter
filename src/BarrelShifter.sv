@@ -1,6 +1,3 @@
-// This made me want to blow my brains out
-// Just use << and >>
-
 module BarrelShifter #(
 	parameter DATA_W = 32,
 	parameter SHAMT_W = 5
